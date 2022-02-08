@@ -30,29 +30,29 @@
 #endif
 
 #if BALLET
-#define IMG_PATH "/home/cly/Documents/3DVideos-distrib/MSR3DVideo-Ballet/cam"
-#define CALI_PATH "/home/cly/Documents/3DVideos-distrib/MSR3DVideo-Ballet/calibParams-ballet.txt"
+#define IMG_PATH "/home/eli/3DVideos-distrib/MSR3DVideo-Ballet/cam"
+#define CALI_PATH "/home/eli/3DVideos-distrib/MSR3DVideo-Ballet/calibParams-ballet.txt"
 #elif BREAKDANCER
-#define IMG_PATH "/home/cly/Documents/3DVideos-distrib/MSR3DVideo-Breakdancers/cam"
-#define CALI_PATH "/home/cly/Documents/3DVideos-distrib/MSR3DVideo-Breakdancers/calibParams-breakdancers.txt"
+#define IMG_PATH "/home/eli/3DVideos-distrib/MSR3DVideo-Breakdancers/cam"
+#define CALI_PATH "/home/eli/3DVideos-distrib/MSR3DVideo-Breakdancers/calibParams-breakdancers.txt"
 #elif KENDO
-#define IMG_PATH "/home/cly/Documents/Kendo/cam"
-#define CALI_PATH "/home/cly/Documents/Kendo/cam_param_kendo.txt"
+#define IMG_PATH "/home/eli/Kendo/cam"
+#define CALI_PATH "/home/eli/Kendo/cam_param_kendo.txt"
 #elif LOVEBIRD
-#define IMG_PATH "/home/cly/Documents/lovebird/cam"
-#define CALI_PATH "/home/cly/Documents/lovebird/cam_param_lovebird1.txt"
+#define IMG_PATH "/home/eli/lovebird/cam"
+#define CALI_PATH "/home/eli/lovebird/cam_param_lovebird1.txt"
 #elif BOOKARRIVAL
-#define IMG_PATH "/home/cly/Documents/BookArrival/cam"
-#define CALI_PATH "/home/cly/Documents/BookArrival/cam_param_bookarrival.txt"
+#define IMG_PATH "/home/eli/BookArrival/cam"
+#define CALI_PATH "/home/eli/BookArrival/cam_param_bookarrival.txt"
 #elif NEWSPAPER
-#define IMG_PATH "/home/cly/Documents/Newspaper/cam"
-#define CALI_PATH "/home/cly/Documents/Newspaper/cam_param_news.txt"
+#define IMG_PATH "/home/eli/Newspaper/cam"
+#define CALI_PATH "/home/eli/Newspaper/cam_param_news.txt"
 #elif POZNANSTREET
-#define IMG_PATH "/home/cly/Documents/poznanstreet/cam"
-#define CALI_PATH "/home/cly/Documents/poznanstreet/cam_param_poznan_street.txt"
+#define IMG_PATH "/home/eli/poznanstreet/cam"
+#define CALI_PATH "/home/eli/poznanstreet/cam_param_poznan_street.txt"
 #elif POZNANHALL2
-#define IMG_PATH "/home/cly/Documents/poznanhall2/cam"
-#define CALI_PATH "/home/cly/Documents/poznanhall2/cam_param_poznan_hall2.txt"
+#define IMG_PATH "/home/eli/poznanhall2/cam"
+#define CALI_PATH "/home/eli/poznanhall2/cam_param_poznan_hall2.txt"
 #endif
 
 #define IMG_COLOR_NAME "color-cam"

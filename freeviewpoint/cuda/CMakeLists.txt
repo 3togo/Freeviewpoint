@@ -1,14 +1,14 @@
-cmake_minimum_required(VERSION 2.8)
+#cmake_minimum_required(VERSION 2.8)
 
 #set(CMAKE_CXX_STANDARD 11)
 #set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 
-set(OpenCV_DIR /usr/local/opencv4/lib/cmake/opencv4)
+set(OpenCV_DIR /opt/opencv4/jammy/lib/cmake/opencv4)
 find_package(OpenCV REQUIRED)
 find_package(CUDA REQUIRED)
 
-set(  CUDA_NVCC_FLAGS
-     ${CUDA_NVCC_FLAGS} -gencode arch=compute_61,code=sm_61)
+#set(  CUDA_NVCC_FLAGS
+#     ${CUDA_NVCC_FLAGS} -gencode arch=compute_61,code=sm_61)
 
 cuda_include_directories(${OpenCV_INCLUDE_DIRS})
 cuda_include_directories(${CUDA_INCLUDE_DIRS})

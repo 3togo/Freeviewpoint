@@ -1,5 +1,7 @@
 #include "kernel.h"
 #include <opencv2/opencv.hpp>
+#include <opencv2/cudaimgproc.hpp>
+#include <opencv2/cudafilters.hpp>
 #include "cuda_runtime.h"
 #include <iostream>
 #include "device_launch_parameters.h"
@@ -331,9 +333,12 @@ void calValueRatio(cuda::PtrStepSz<uchar3> srcColorL,
             CmaxR = (BGR_R[0] > BGR_R[1]) ? BGR_R[0] : BGR_R[1];
             CmaxR = (CmaxR > BGR_R[2]) ? CmaxR : BGR_R[2];
 
-            if(CmaxR<0.00001) atomicAdd(ratioV, 1);
-            else atomicAdd(ratioV, CmaxL/CmaxR);
-            atomicAdd(cntV, 1);
+            //if(CmaxR<0.00001) atomicAdd(ratioV, 1);
+            //else atomicAdd(ratioV, CmaxL/CmaxR);
+            //atomicAdd(cntV, 1);
+            if(CmaxR<0.00001) ratioV++;
+            else ratioV += int(CmaxL/CmaxR);
+            cntV++;
         }
     }
 }

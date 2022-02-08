@@ -7,7 +7,7 @@ project(freeviewpoint)
 
 add_subdirectory(cuda)
 
-set(OpenCV_DIR /usr/local/opencv4/lib/cmake/opencv4)
+set(OpenCV_DIR /opt/opencv4/jammy/lib/cmake/opencv4)
 find_package(OpenCV REQUIRED)
 #find_package(PkgConfig REQUIRED)
 #find_package(freenect2 REQUIRED)
